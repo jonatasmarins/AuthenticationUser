@@ -1,0 +1,93 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>AuthenticationUser.Api</name>
+    </assembly>
+    <members>
+        <member name="M:AuthenticationUser.Api.Controllers.AuthController.#ctor(Microsoft.AspNetCore.Identity.UserManager{AuthenticationUser.CrossCutting.Identity.Models.ApplicationUser},Microsoft.AspNetCore.Identity.SignInManager{AuthenticationUser.CrossCutting.Identity.Models.ApplicationUser},AuthenticationUser.CrossCutting.Identity.Models.TokenConfigurations,Microsoft.Extensions.Caching.Distributed.IDistributedCache,Microsoft.Extensions.Configuration.IConfigurationRoot)">
+            <summary>
+            AuthController
+            </summary>
+            <param name="userManager"></param>
+            <param name="signInManager"></param>
+            <param name="tokenConfigurations"></param>        
+            <param name="cache"></param>
+            <param name="iConfiguration"></param>        
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.AuthController.Login(AuthenticationUser.Domain.Models.Request.Login.LoginModelRequest)">
+            <summary>
+            Login
+            </summary>
+            <param name="loginModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.CategoryController.#ctor(AuthenticationUser.Domain.Services.ICategoryApplicationService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="categoryApplicationService"></param>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.CategoryController.Get">
+            <summary>
+            Get All Categories
+            </summary>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.CategoryController.Create(System.String)">
+            <summary>
+            Create Category
+            </summary>
+            <param name="title"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.CategoryController.Update(AuthenticationUser.Domain.Models.Request.Category.CategoryModelRequest)">
+            <summary>
+            Update Category
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.CategoryController.Delete(AuthenticationUser.Domain.Models.Request.Category.CategoryModelRequest)">
+            <summary>
+            Delete Category
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.ProductController.#ctor(AuthenticationUser.Domain.Services.IProductApplicationService)">
+            <summary>
+            Constructor
+            </summary>
+            <param name="productApplicationService"></param>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.ProductController.Get(System.String)">
+            <summary>
+            Get All Products
+            </summary>
+            <param name="name"></param>        
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.ProductController.Create(AuthenticationUser.Domain.Models.Request.Product.ProductModelRequest)">
+            <summary>
+            Create Product
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.ProductController.Update(AuthenticationUser.Domain.Models.Request.Product.ProductModelRequest)">
+            <summary>
+            Update Product
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="M:AuthenticationUser.Api.Controllers.ProductController.Delete(AuthenticationUser.Domain.Models.Request.Product.ProductModelRequest)">
+            <summary>
+            Delete Product
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
